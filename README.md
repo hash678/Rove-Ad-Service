@@ -16,7 +16,7 @@ Copy the project's classes to your own project.
 
 For interstellar Ad create an AdService object and pass in the main view of the View Controller.
 
-## For example
+### For example
 ```
 let service = AdService(type: .Banner,adCacheTime: 30 , screenName: "Example Class", view: self.view, delegate: self)
 ```
@@ -24,7 +24,7 @@ let service = AdService(type: .Banner,adCacheTime: 30 , screenName: "Example Cla
 For Banner Ad
 Create a UIView object and place it in your desired location. Create an AdService object passing in the ad banner view object.
 
-## For example
+### For example
 ```
 let adBanner = UIView()
 let service = AdService(type: .Banner, adCacheTime: 30 ,  screenName: "Example Class", view: adBanner, delegate: self)
@@ -39,6 +39,10 @@ To show the ad once its loaded simply call the following function
         service.showAd()
     }
 ```    
+
+### Make sure to add code in the function loadAdFromServer()
+
+
 
 ## Built With
 
