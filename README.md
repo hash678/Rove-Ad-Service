@@ -18,7 +18,7 @@ For interstellar Ad create an AdService object and pass in the main view of the 
 
 ## For example
 ```
-let service = AdService(type: .Banner, screenName: "Example Class", view: self.view, delegate: self)
+let service = AdService(type: .Banner,adCacheTime: 30 , screenName: "Example Class", view: self.view, delegate: self)
 ```
 
 For Banner Ad
@@ -27,7 +27,7 @@ Create a UIView object and place it in your desired location. Create an AdServic
 ## For example
 ```
 let adBanner = UIView()
-let service = AdService(type: .Banner, screenName: "Example Class", view: adBanner, delegate: self)
+let service = AdService(type: .Banner, adCacheTime: 30 ,  screenName: "Example Class", view: adBanner, delegate: self)
 ```
 
 Once the object is created simply call service.load() to load the advertisment from the server. 
